@@ -1,0 +1,10 @@
+ public int[] SortedSquares(int[] nums) {
+       int[] SortedSquareArray= new int[nums.Length];
+        for(int i=0; i< nums.Length; i++)
+        {          
+            SortedSquareArray[i]=nums[i]*nums[i];        
+        }
+        
+        Array.Sort(SortedSquareArray);
+        return SortedSquareArray;
+    }
